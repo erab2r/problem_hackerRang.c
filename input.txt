@@ -1,4 +1,1 @@
-3
-race
-noon
-hello
+10 20

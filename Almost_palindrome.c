@@ -5,15 +5,15 @@ int main() {
     int t;
     scanf("%d", &t); 
     for (int i = 0; i < t; i++) {
-        char S[1001];
-        scanf("%s", S);  
+        char s[1001];
+        scanf("%s", s);  
         int freq[26] = {0};          
-        int len = strlen(S);        
+        int len = strlen(s);        
         for (int i = 0;i<len;i++) {
-            freq[S[i]-'a']++;
+            freq[s[i]-'a']++;
         }
         int odd_count = 0;
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0;i<26;i++) {
             if (freq[i] % 2 == 1) {
                 odd_count++;
             }
